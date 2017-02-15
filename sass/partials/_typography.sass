@@ -1,0 +1,95 @@
+// 00. HEADER
+.header
+  .logo
+    +typo(1.6rem)
+  .para
+    +typo(0.8rem)
+    span
+      font-weight: $bold
+
+// 01. LANDING
+.landing
+  &-title
+    +typo(58px, 4.8rem)
+    margin-bottom: 1.6rem
+    .landing-tag
+      +typo(1.6rem)
+      display: block
+      margin-bottom: 1.6rem
+  &-content span
+    font-weight: $bold
+  +minmax-mq(0, $tb)
+    &-title
+      +typo(46px, 4rem)
+      .landing-tag
+        +typo(18px)
+
+// 02. ABOUT
+.about
+  &-category
+    +typo(21px)
+    margin-bottom: 1.6rem
+  &-title
+    +typo(36px, 3.2rem)
+    margin-bottom: 1.6rem
+    font-weight: $normal
+  &-list
+    h4
+      +typo($base-size)
+      margin-bottom: 1.6rem
+      font-weight: $bold
+  +minmax-mq(0, $tb)
+    &-title
+      +typo(30px, 3.2rem)
+
+
+.team
+  &-category
+    +typo(21px)
+    margin-bottom: 1.6rem
+  &-title
+    +typo(36px, 3.2rem)
+    margin-bottom: 1.6rem
+    font-weight: $normal
+  &-members
+    h4
+      +typo($base-size)
+      margin:
+        right: 0.8rem
+      font-weight: $bold
+  &-major
+    +typo(12px)
+  +minmax-mq(0, $dk)
+    &-title
+      +typo(30px, 3.2rem)
+    h4
+      +typo(0.85rem)
+
+
+// 04. PLAN
+.plan
+  &-category
+    +typo(21px)
+    margin-bottom: 1.6rem
+  &-title
+    +typo(36px, 3.2rem)
+    margin-bottom: 1.6rem
+    font-weight: $normal
+  &-item
+    h4
+      +typo($base-size)
+      margin-bottom: 1.6rem
+      font-weight: $bold
+  +minmax-mq(0, $tb)
+    &-title
+      +typo(30px, 3.2rem)
+
+
+// 05. ETC
+.content-extra
+  &-purple
+    +typo(12px)
+    color: $purple
+  &-green
+    +typo(12px)
+    color: $green

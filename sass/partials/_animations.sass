@@ -1,0 +1,29 @@
+.highlight-green span
+  position: relative
+  display: inline-block
+  z-index: 1
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: -3px
+    right: -3px
+    z-index: -1
+    display: inline-block
+    height: 28px
+    background-color: rgba($green, 0.5)
+
+.highlight-purple
+  position: relative
+  display: inline-block
+  z-index: 1
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0
+    left: -3px
+    right: -3px
+    z-index: -1
+    display: inline-block
+    height: 15px
+    background-color: rgba($light-purple, 1)

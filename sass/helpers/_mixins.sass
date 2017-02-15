@@ -1,0 +1,20 @@
+// LAYOUTS RELATED
+=min-mq($min)
+  @media screen and (min-width: $min)
+    @content
+
+=minmax-mq($min, $max)
+  @media screen and (min-width: $min) and (max-width: $max - 1)
+    @content
+
+=flex($jc: center, $ai: center, $dir: row, $wrap: nowrap)
+  display: flex
+  flex-direction: $dir
+  flex-wrap: $wrap
+  justify-content: $jc
+  align-items: $ai
+
+// DEFAULT SETTINGS
+=typo($size, $lh: $line-height)
+  font-size: $size
+  line-height: $lh
