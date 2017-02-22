@@ -18,4 +18,16 @@ sections.forEach(function(item) {
       item.setAttribute('class', '');
     });
   });
+  item.addEventListener('touchstart', function() {
+    var items = findSpan(this);
+    items.forEach(function(item){
+      item.setAttribute('class', 'on');
+    });
+  });
+  item.addEventListener('touchend', function() {
+    var items = findSpan(this);
+    items.forEach(function(item){
+      item.setAttribute('class', '');
+    });
+  });
 });
