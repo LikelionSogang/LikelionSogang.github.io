@@ -6,12 +6,18 @@
     content: ''
     position: absolute
     bottom: 0
-    left: -3px
-    right: -3px
+    left: 0
+    right: 100%
     z-index: -1
     display: inline-block
     height: 28px
     background-color: rgba($green, 0.5)
+    transition: 0.4s all ease-in-out
+  &.on
+    &::after
+      right: 0
+  &:last-child::after
+    transition-delay: 0.2s
 
 .highlight-purple
   position: relative
