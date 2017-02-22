@@ -57,8 +57,17 @@
       margin:
         right: 0.8rem
       font-weight: $bold
+      color: white
+      &::after
+        content: ''
+        display: block
+        width: 20px
+        height: 3px
+        margin: 0.5rem 0 1rem
+        background-color: white
   &-major
     +typo(12px)
+    color: white
   +minmax-mq(0, $dk)
     &-title
       +typo(30px, 3.2rem)
